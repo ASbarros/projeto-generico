@@ -35,6 +35,8 @@ public class Generics {
         alunoReflectionExemplo.setDataMatricula(GregorianCalendar.from(ZonedDateTime.now()));
         alunoReflectionExemplo.setNome("anderson");
         alunoReflectionExemplo.setNumMatricula("123456789");
+        alunoReflectionExemplo.addNota(1);
+        alunoReflectionExemplo.addNota(2);
         alunoReflectionExemplo.setValor(5555);
 
         Reflexao.refletirObjeto(alunoReflectionExemplo, alunoReflectionExemplo.getClass());
